@@ -12,6 +12,13 @@ The extension is in pending review for the chrome store but you can still instal
 - Click "Load Unpack".
 - It's finish use it :)
 
+## How to update
+
+- Download new version in the place of the older
+- Extensions page
+- Enable "Developer mode"
+- Click update butotn at the top
+
 ## Is it safe ?
 
 All the code is here and you download from here so you can check by yourself, it's pretty safe.
