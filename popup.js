@@ -305,7 +305,10 @@ function setValues() {
                 currentavaxvalue +
                 " AVAX - PNL: " +
                 Math.round(100 * (currentavaxvalue - poolLPinvest[j])) / 100 +
-                " AVAX</div></div>";
+                " AVAX</div></div>" +
+                '<div class="sc-kGXeez sc-hSdWYo sc-eHgmQL cyKdsJ"><div class="sc-kgoBCf nmCQH css-8626y4">Pool share </div><div class="sc-kgoBCf nmCQH css-8626y4">' +
+                ((currentavaxvalue / nbavax) * 100).toFixed(4) +
+                " %</div></div>";
             } else {
               blocvalue.innerHTML =
                 '<div class="sc-kGXeez sc-hSdWYo sc-eHgmQL cyKdsJ"><div class="sc-kgoBCf nmCQH css-8626y4">Value LP </div><div class="sc-kgoBCf nmCQH css-8626y4">' +
