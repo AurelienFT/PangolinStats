@@ -160,43 +160,43 @@ function setValues() {
 
   chrome.storage.sync.get("values", function (result) {
     poolLPinvest[0] =
-      result.values.avax_eth == undefined ? 0 : result.values.avax_eth; //AVAXETH
+      result.values.avax_eth == undefined ? 0 : Number(result.values.avax_eth); //AVAXETH
     poolLPinvest[1] =
-      result.values.avax_usdt == undefined ? 0 : result.values.avax_usdt; //AVAXUSDT
+      result.values.avax_usdt == undefined ? 0 : Number(result.values.avax_usdt); //AVAXUSDT
     poolLPinvest[2] =
-      result.values.avax_wbtc == undefined ? 0 : result.values.avax_wbtc; //AVAXWBTC
+      result.values.avax_wbtc == undefined ? 0 : Number(result.values.avax_wbtc); //AVAXWBTC
     poolLPinvest[3] =
-      result.values.avax_png == undefined ? 0 : result.values.avax_png; //AVAXPNG
+      result.values.avax_png == undefined ? 0 : Number(result.values.avax_png); //AVAXPNG
     poolLPinvest[4] =
-      result.values.avax_link == undefined ? 0 : result.values.avax_link; //AVAXLINK
+      result.values.avax_link == undefined ? 0 : Number(result.values.avax_link); //AVAXLINK
     poolLPinvest[5] =
-      result.values.avax_dai == undefined ? 0 : result.values.avax_dai; //AVAXDAI
+      result.values.avax_dai == undefined ? 0 : Number(result.values.avax_dai); //AVAXDAI
     poolLPinvest[6] =
-      result.values.avax_uni == undefined ? 0 : result.values.avax_uni; //AVAXUNI
+      result.values.avax_uni == undefined ? 0 : Number(result.values.avax_uni); //AVAXUNI
     poolLPinvest[7] =
-      result.values.avax_sushi == undefined ? 0 : result.values.avax_sushi; //AVAXSUSHI
+      result.values.avax_sushi == undefined ? 0 : Number(result.values.avax_sushi); //AVAXSUSHI
     poolLPinvest[8] =
-      result.values.avax_aave == undefined ? 0 : result.values.avax_aave; //AVAXAAVE
+      result.values.avax_aave == undefined ? 0 : Number(result.values.avax_aave); //AVAXAAVE
     poolLPinvest[9] =
-      result.values.avax_yfi == undefined ? 0 : result.values.avax_yfi; //AVAXYFI
+      result.values.avax_yfi == undefined ? 0 : Number(result.values.avax_yfi); //AVAXYFI
     poolLPinvest[10] =
-      result.values.png_eth == undefined ? 0 : result.values.png_eth; //PNGETH
+      result.values.png_eth == undefined ? 0 : Number(result.values.png_eth); //PNGETH
     poolLPinvest[11] =
-      result.values.png_usdt == undefined ? 0 : result.values.png_usdt; //PNGUSDT
+      result.values.png_usdt == undefined ? 0 : Number(result.values.png_usdt); //PNGUSDT
     poolLPinvest[12] =
-      result.values.png_wbtc == undefined ? 0 : result.values.png_wbtc; //PNGWBTC
+      result.values.png_wbtc == undefined ? 0 : Number(result.values.png_wbtc); //PNGWBTC
     poolLPinvest[13] =
-      result.values.png_link == undefined ? 0 : result.values.png_link; //PNGLINK
+      result.values.png_link == undefined ? 0 : Number(result.values.png_link); //PNGLINK
     poolLPinvest[14] =
-      result.values.png_dai == undefined ? 0 : result.values.png_dai; //PNGDAI
+      result.values.png_dai == undefined ? 0 : Number(result.values.png_dai); //PNGDAI
     poolLPinvest[15] =
-      result.values.png_uni == undefined ? 0 : result.values.png_uni; //PNGUNI
+      result.values.png_uni == undefined ? 0 : Number(result.values.png_uni); //PNGUNI
     poolLPinvest[16] =
-      result.values.png_sushi == undefined ? 0 : result.values.png_sushi; //PNGSUSHI
+      result.values.png_sushi == undefined ? 0 : Number(result.values.png_sushi); //PNGSUSHI
     poolLPinvest[17] =
-      result.values.png_aave == undefined ? 0 : result.values.png_aave; //PNGAAVE
+      result.values.png_aave == undefined ? 0 : Number(result.values.png_aave); //PNGAAVE
     poolLPinvest[18] =
-      result.values.png_yfi == undefined ? 0 : result.values.png_yfi; //PNGYFI
+      result.values.png_yfi == undefined ? 0 : Number(result.values.png_yfi); //PNGYFI
     var totalLPinvest =
       Math.round(100 * poolLPinvest.reduce((a, b) => a + b, 0)) / 100;
 
@@ -300,12 +300,13 @@ function setValues() {
             var blocvalue = document.createElement("div");
             var br = document.createElement("br");
             if (poolLPinvest[j] != 0) {
+                let pnl = Math.round(100 * (currentavaxvalue - poolLPinvest[j])) / 100;
               blocvalue.innerHTML =
                 '<div class="sc-kGXeez sc-hSdWYo sc-eHgmQL cyKdsJ"><div class="sc-kgoBCf nmCQH css-8626y4">Value LP </div><div class="sc-kgoBCf nmCQH css-8626y4">' +
                 currentavaxvalue +
                 " AVAX - PNL: " +
-                Math.round(100 * (currentavaxvalue - poolLPinvest[j])) / 100 +
-                " AVAX</div></div>" +
+                pnl +
+                " AVAX - " + (pnl / currentavaxvalue * 100).toFixed(4) + "  %</div></div>" +
                 '<div class="sc-kGXeez sc-hSdWYo sc-eHgmQL cyKdsJ"><div class="sc-kgoBCf nmCQH css-8626y4">Pool share </div><div class="sc-kgoBCf nmCQH css-8626y4">' +
                 ((currentavaxvalue / nbavax) * 100).toFixed(4) +
                 " %</div></div>";
