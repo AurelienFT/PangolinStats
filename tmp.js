@@ -1,9 +1,0 @@
-    poolLPinvest[0] = result.values.png_eth == undefined ? 0 : result.values.png_eth; //PNGETH
-    poolLPinvest[1] = result.values.png_usdt == undefined ? 0 : result.values.png_usdt; //PNGUSDT
-    poolLPinvest[2] = result.values.png_wbtc == undefined ? 0 : result.values.png_wbtc; //PNGWBTC
-    poolLPinvest[4] = result.values.png_link == undefined ? 0 : result.values.png_link; //PNGLINK
-    poolLPinvest[5] = result.values.png_dai == undefined ? 0 : result.values.png_dai; //PNGDAI
-    poolLPinvest[6] = result.values.png_uni == undefined ? 0 : result.values.png_uni; //PNGUNI
-    poolLPinvest[7] = result.values.png_sushi == undefined ? 0 : result.values.png_sushi; //PNGSUSHI
-    poolLPinvest[8] = result.values.png_aave == undefined ? 0 : result.values.png_aave; //PNGAAVE
-    poolLPinvest[9] = result.values.png_yfi == undefined ? 0 : result.values.png_yfi; //PNGYFI

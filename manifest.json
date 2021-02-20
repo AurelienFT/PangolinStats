@@ -1,6 +1,6 @@
 {
   "name": "PangolinStats",
-  "description": "A extension to have more stats on your pangolin farming!",
+  "description": "A extension to have more stats on your pangolin farming! Source code : https://github.com/AurelienFT/PangolinStats",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
