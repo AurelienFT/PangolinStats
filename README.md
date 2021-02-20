@@ -28,3 +28,7 @@ Contact me on Telegram or open an issue.
 ## Want to contribute ?
 
 Feel free to open a pull request ! :)
+
+## Screenshots
+
+![first screen](https://i.imgur.com/iql2AwG.png)
