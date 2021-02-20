@@ -54,79 +54,79 @@ saveSettings.addEventListener("click", async () => {
         avax_eth:
           document.getElementById("AVAX/ETH").value == ""
             ? undefined
-            : document.getElementById("AVAX/ETH").value,
+            : document.getElementById("AVAX/ETH").value.replace(/,/g, '.'),
         avax_usdt:
           document.getElementById("AVAX/USDT").value == ""
             ? undefined
-            : document.getElementById("AVAX/USDT").value,
+            : document.getElementById("AVAX/USDT").value.replace(/,/g, '.'),
         avax_wbtc:
           document.getElementById("AVAX/WBTC").value == ""
             ? undefined
-            : document.getElementById("AVAX/WBTC").value,
+            : document.getElementById("AVAX/WBTC").value.replace(/,/g, '.'),
         avax_png:
           document.getElementById("AVAX/PNG").value == ""
             ? undefined
-            : document.getElementById("AVAX/PNG").value,
+            : document.getElementById("AVAX/PNG").value.replace(/,/g, '.'),
         avax_link:
           document.getElementById("AVAX/LINK").value == ""
             ? undefined
-            : document.getElementById("AVAX/LINK").value,
+            : document.getElementById("AVAX/LINK").value.replace(/,/g, '.'),
         avax_dai:
           document.getElementById("AVAX/DAI").value == ""
             ? undefined
-            : document.getElementById("AVAX/DAI").value,
+            : document.getElementById("AVAX/DAI").value.replace(/,/g, '.'),
         avax_uni:
           document.getElementById("AVAX/UNI").value == ""
             ? undefined
-            : document.getElementById("AVAX/UNI").value,
+            : document.getElementById("AVAX/UNI").value.replace(/,/g, '.'),
         avax_sushi:
           document.getElementById("AVAX/SUSHI").value == ""
             ? undefined
-            : document.getElementById("AVAX/SUSHI").value,
+            : document.getElementById("AVAX/SUSHI").value.replace(/,/g, '.'),
         avax_aave:
           document.getElementById("AVAX/AAVE").value == ""
             ? undefined
-            : document.getElementById("AVAX/AAVE").value,
+            : document.getElementById("AVAX/AAVE").value.replace(/,/g, '.'),
         avax_yfi:
           document.getElementById("AVAX/YFI").value == ""
             ? undefined
-            : document.getElementById("AVAX/YFI").value,
+            : document.getElementById("AVAX/YFI").value.replace(/,/g, '.'),
         png_eth:
           document.getElementById("PNG/ETH").value == ""
             ? undefined
-            : document.getElementById("PNG/ETH").value,
+            : document.getElementById("PNG/ETH").value.replace(/,/g, '.'),
         png_usdt:
           document.getElementById("PNG/USDT").value == ""
             ? undefined
-            : document.getElementById("PNG/USDT").value,
+            : document.getElementById("PNG/USDT").value.replace(/,/g, '.'),
         png_wbtc:
           document.getElementById("PNG/WBTC").value == ""
             ? undefined
-            : document.getElementById("PNG/WBTC").value,
+            : document.getElementById("PNG/WBTC").value.replace(/,/g, '.'),
         png_link:
           document.getElementById("PNG/LINK").value == ""
             ? undefined
-            : document.getElementById("PNG/LINK").value,
+            : document.getElementById("PNG/LINK").value.replace(/,/g, '.'),
         png_dai:
           document.getElementById("PNG/DAI").value == ""
             ? undefined
-            : document.getElementById("PNG/DAI").value,
+            : document.getElementById("PNG/DAI").value.replace(/,/g, '.'),
         png_uni:
           document.getElementById("PNG/UNI").value == ""
             ? undefined
-            : document.getElementById("PNG/UNI").value,
+            : document.getElementById("PNG/UNI").value.replace(/,/g, '.'),
         png_sushi:
           document.getElementById("PNG/SUSHI").value == ""
             ? undefined
-            : document.getElementById("PNG/SUSHI").value,
+            : document.getElementById("PNG/SUSHI").value.replace(/,/g, '.'),
         png_aave:
           document.getElementById("PNG/AAVE").value == ""
             ? undefined
-            : document.getElementById("PNG/AAVE").value,
+            : document.getElementById("PNG/AAVE").value.replace(/,/g, '.'),
         png_yfi:
           document.getElementById("PNG/YFI").value == ""
             ? undefined
-            : document.getElementById("PNG/YFI").value,
+            : document.getElementById("PNG/YFI").value.replace(/,/g, '.'),
       },
     },
     function () {
