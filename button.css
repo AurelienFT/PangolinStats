@@ -1,0 +1,6 @@
+body {
+    min-width: 200px; /* your desired width */
+    max-width: 100%;
+    position: relative;
+    vertical-align:middle;
+}
